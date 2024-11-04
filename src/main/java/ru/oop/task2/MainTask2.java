@@ -21,12 +21,16 @@ package ru.oop.task2;
  * @since 21.10.2020
  */
 public class MainTask2 {
-
     /**
      * Переехать из текущего места в заданную точку
-     * на любом, заранее определённом транспорте
-     * @see Person
-     * @see Position
      */
-    // TODO реализовать метод moveTo(...)
+    public void moveTo(Person person, Position destination) {
+        Transport transport = new Bus("52");
+        person.walk(transport.getPosition());
+        Position newPosition = transport.driveTo(person, destination);
+        if (newPosition != destination) {
+            person.walk(destination);
+        }
+        assert person.getPosition() == destination;
+    }
 }
