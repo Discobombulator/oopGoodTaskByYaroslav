@@ -20,8 +20,7 @@ class Bus implements Transport {
      * @return текущее местоположение автобуса в виде объекта Position.
      */
     @Override
-    public Position getCurrentPosition() {
-        //TODO
+    public Position getPosition() {
         return null;
     }
 
@@ -37,4 +36,5 @@ class Bus implements Transport {
         //TODO
         return null;
     }
+
 }

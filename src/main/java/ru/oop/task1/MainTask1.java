@@ -22,7 +22,7 @@ public class MainTask1 {
      */
     public void moveTo(Person person, Position destination) {
         Car car = new Car(person.getPosition());
-        car.seatToCar();
+        car.seatToCar(person);
         Position newPosition = car.driveTo(destination);
         if (newPosition != destination){
             person.walk(destination);}

@@ -8,11 +8,12 @@ package ru.oop.task2;
  */
 class Scooter implements Transport {
     /**
-     * Возвращает текущее местоположение самоката.
+     * Возвращает текущее местоположение автобуса.
+     *
+     * @return текущее местоположение автобуса в виде объекта Position.
      */
     @Override
-    public Position getCurrentPosition() {
-        //TODO
+    public Position getPosition() {
         return null;
     }
 

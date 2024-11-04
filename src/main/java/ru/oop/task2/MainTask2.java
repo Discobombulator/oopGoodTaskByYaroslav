@@ -26,7 +26,7 @@ public class MainTask2 {
      */
     public void moveTo(Person person, Position destination) {
         Transport transport = new Bus("52");
-        person.walk(transport.getCurrentPosition());
+        person.walk(transport.getPosition());
         Position newPosition = transport.driveTo(person, destination);
         if (newPosition != destination) {
             person.walk(destination);

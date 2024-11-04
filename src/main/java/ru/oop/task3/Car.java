@@ -7,11 +7,12 @@ package ru.oop.task3;
  */
 class Car implements Transport {
     /**
-     * Возвращает текущее местоположение автомобиля.
+     * Возвращает текущее местоположение автобуса.
+     *
+     * @return текущее местоположение автобуса в виде объекта Position.
      */
     @Override
-    public Position getCurrentPosition() {
-        //TODO
+    public Position getPosition() {
         return null;
     }
 

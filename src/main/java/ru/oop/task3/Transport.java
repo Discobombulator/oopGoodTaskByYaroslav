@@ -2,8 +2,7 @@ package ru.oop.task3;
 
 /**
  * Интерфейс для транспорта
- */
-interface Transport {
-    Position getCurrentPosition();
+*/
+interface Transport extends Positioned {
     Position driveTo(Person person, Position destination);
 }

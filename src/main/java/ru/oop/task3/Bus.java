@@ -5,7 +5,7 @@ package ru.oop.task3;
  * Этот класс отвечает за управление автобусом, включая получение его текущего местоположения
  * и перемещение к заданному месту назначения.
  */
-class Bus implements Transport {
+    class Bus implements Transport {
     /**
      * Конструктор для создания автобуса с заданным номером маршрута.
      *
@@ -14,17 +14,6 @@ class Bus implements Transport {
     public Bus(String routeNumber) {
         //TODO
     }
-    /**
-     * Возвращает текущее местоположение автобуса.
-     *
-     * @return текущее местоположение автобуса в виде объекта Position.
-     */
-    @Override
-    public Position getCurrentPosition() {
-        //TODO
-        return null;
-    }
-
     /**
      * Перемещает автобус к заданному месту назначения.
      *
@@ -35,6 +24,16 @@ class Bus implements Transport {
     @Override
     public Position driveTo(Person person, Position destination) {
         //TODO
+        return null;
+    }
+
+    /**
+     * Возвращает текущее местоположение автобуса.
+     *
+     * @return текущее местоположение автобуса в виде объекта Position.
+     */
+    @Override
+    public Position getPosition() {
         return null;
     }
 }

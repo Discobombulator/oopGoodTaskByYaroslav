@@ -1,5 +1,6 @@
 package ru.oop.task3;
 
+
 import java.util.List;
 
 /**
@@ -30,8 +31,8 @@ public class MainTask3 {
     public void moveTo(Person person, Position destination) {
         List<Transport> transportsList = List.of(new Scooter(), new Car(), new Bus("52"));
         for (Transport transport : transportsList) {
-            person.walk(transport.getCurrentPosition());
-            destination = transport.driveTo(person, destination);
+            person.walk(transport.getPosition());
+            destination = (Position) transport.driveTo((Person) person, (Position) destination);
             if (person.getPosition().equals(destination)){
                 break;
             }

@@ -14,7 +14,7 @@ class Car {
     /**
      * Persona садиться в машину
      */
-    public void seatToCar() {
+    public void seatToCar(Person person) {
         // TODO
     }
     /**
