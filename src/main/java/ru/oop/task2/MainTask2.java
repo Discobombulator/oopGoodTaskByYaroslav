@@ -25,9 +25,9 @@ public class MainTask2 {
      * Переехать из текущего места в заданную точку
      */
     public void moveTo(Person person, Position destination) {
-        Transport transport = new Bus("52"); // Или new Bus("43");
+        Transport transport = new Bus("52");
         person.walk(transport.getCurrentPosition());
-        Position newPosition = transport.moveTo(person, destination);
+        Position newPosition = transport.driveTo(person, destination);
         if (newPosition != destination) {
             person.walk(destination);
         }

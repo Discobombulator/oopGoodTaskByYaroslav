@@ -31,7 +31,7 @@ public class MainTask3 {
         List<Transport> transportsList = List.of(new Scooter(), new Car(), new Bus("52"));
         for (Transport transport : transportsList) {
             person.walk(transport.getCurrentPosition());
-            destination = transport.moveTo(person, destination);
+            destination = transport.driveTo(person, destination);
             if (person.getPosition().equals(destination)){
                 break;
             }

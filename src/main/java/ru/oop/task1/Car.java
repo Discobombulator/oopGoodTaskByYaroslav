@@ -18,9 +18,9 @@ class Car {
         // TODO
     }
     /**
-     * Проверяем, можем ли мы доехать до destination
+     * Едем до destination на машине
      */
-    public Position drive(Position destination) {
+    public Position driveTo(Position destination) {
         // TODO
         return null;
     }

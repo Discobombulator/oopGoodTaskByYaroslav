@@ -23,7 +23,7 @@ public class MainTask1 {
     public void moveTo(Person person, Position destination) {
         Car car = new Car(person.getPosition());
         car.seatToCar();
-        Position newPosition = car.drive(destination);
+        Position newPosition = car.driveTo(destination);
         if (newPosition != destination){
             person.walk(destination);}
         assert person.getPosition() == destination;

@@ -5,5 +5,5 @@ package ru.oop.task2;
 */
 interface Transport {
     Position getCurrentPosition();
-    Position moveTo(Person person, Position destination);
+    Position driveTo(Person person, Position destination);
 }

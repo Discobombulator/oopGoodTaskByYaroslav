@@ -24,7 +24,7 @@ class Scooter implements Transport {
      * @return новое местоположение после попытки перемещения
      */
     @Override
-    public Position moveTo(Person person, Position destination) {
+    public Position driveTo(Person person, Position destination) {
         //TODO
         return null;
     }
