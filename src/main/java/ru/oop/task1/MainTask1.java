@@ -17,15 +17,15 @@ package ru.oop.task1;
  */
 
 public class MainTask1 {
-
     /**
      * Переехать из текущего места в заданную точку
      */
     public void moveTo(Person person, Position destination) {
         Car car = new Car(person.getPosition());
+        car.seatToCar();
         Position newPosition = car.drive(destination);
-        if (newPosition != destination){person.walk(destination);}
+        if (newPosition != destination){
+            person.walk(destination);}
         assert person.getPosition() == destination;
     }
-
 }

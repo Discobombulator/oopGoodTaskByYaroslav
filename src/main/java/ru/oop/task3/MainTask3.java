@@ -28,15 +28,16 @@ public class MainTask3 {
      * @see Position
      */
     public void moveTo(Person person, Position destination) {
-        List<Transport> transportsList = List.of(new Transport(), new Transport(), new Transport());
+        List<Transport> transportsList = List.of(new Scooter(), new Car(), new Bus("52"));
         for (Transport transport : transportsList) {
-            person.walk(transport.getTransportCurentPosition());
-            destination = transport.usedBy(person, destination);
-            if (person.getPosition() == destination) {
+            person.walk(transport.getCurrentPosition());
+            destination = transport.moveTo(person, destination);
+            if (person.getPosition().equals(destination)){
                 break;
             }
         }
         person.walk(destination);
-        assert person.getPosition() == destination;
+        assert person.getPosition().equals(destination);
     }
+
 }

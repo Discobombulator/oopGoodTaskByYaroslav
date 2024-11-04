@@ -25,11 +25,12 @@ public class MainTask2 {
      * Переехать из текущего места в заданную точку
      */
     public void moveTo(Person person, Position destination) {
-        Transport transport = new Transport();
-        person.walk(transport.getCurentPosition());
-        Position newPosition = transport.usedBy(person, destination);
-        if(newPosition != destination){
-            person.walk(destination);}
+        Transport transport = new Bus("52"); // Или new Bus("43");
+        person.walk(transport.getCurrentPosition());
+        Position newPosition = transport.moveTo(person, destination);
+        if (newPosition != destination) {
+            person.walk(destination);
+        }
         assert person.getPosition() == destination;
     }
 }

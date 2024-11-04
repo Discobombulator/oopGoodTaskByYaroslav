@@ -4,11 +4,17 @@ package ru.oop.task1;
  * Машина для передвижения из текущего места в заданную точку
  */
 class Car {
-    private Position currentPosition;
+
     /**
-     * Устанавливает машине местоположение Persona
+     * Машина создается на месте где стоит Persona
      */
-    public Car(Position currentPosition) {
+    public Car(Position currentPosition){
+        // TODO
+    }
+    /**
+     * Persona садиться в машину
+     */
+    public void seatToCar() {
         // TODO
     }
     /**
